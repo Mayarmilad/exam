@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: black;
+    
+}
+h3{
+    font-size: 32px;
+    color: white;
+
+}
+p{
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.side-nav{
+    display: flex;
+    background-color:transparent;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    color: white;
+    z-index: 9999;
+
+}
+.side-nav .left-side{
+    background-color: black;
+    padding-inline: 30px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35%;
+  
+}
+.side-nav .left-side li{
+    font-size: 17px;
+}
+.side-nav .left-side p{
+    font-size: 12px;
+}
+.side-nav .right-side{
+    background-color:white;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 20%;
+    color: black;
+ 
+}
+
+
+.imgDes{
+    cursor: pointer;
+}
+ul .integrant{
+    background-color: #CFF4FC;
+    width: 100px;
+    border-radius: 10px;
+    text-align: center;
+    padding-block: 10px;
+}
+ul .integrant li{
+    color: black;
+}
+.type-dish{
+    background-color: #F8D7DA;
+    width: 100px;
+    border-radius: 10px;
+    text-align: center;
+    padding-block: 10px;
+}
+.layer{
+    background-color: white;
+    position: absolute;
+    height: 0%;
+    z-index: 1;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+ opacity: 0.5;
+ transition: all 0.5s;
+ color: black;
+ overflow: hidden;
+}
+.first-meal:hover .layer{
+    height: 100%;
+}
